@@ -227,6 +227,45 @@
       }
     }
 
+    /* Logo CSS effect */
+    .logo-css {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 30px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #ffd700 0%, #ffb347 50%, #ffdd55 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow:
+        0 2px 6px rgba(0,0,0,0.45),
+        0 0 20px rgba(255,215,0,0.35);
+      letter-spacing: 0.5px;
+    }
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 10px;
+      min-width: 42px;
+      min-height: 34px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #8b0000 0%, #c21807 50%, #ff5f6d 100%);
+      box-shadow:
+        0 3px 10px rgba(0,0,0,0.4),
+        inset 0 1px 0 rgba(255,255,255,0.15);
+      color: #ffd700;
+      font-weight: 800;
+      font-size: 14px;
+      border: 1px solid rgba(255, 215, 0, 0.35);
+    }
+    .logo-text {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
   </style>
 </head>
 
@@ -234,7 +273,10 @@
   <header id="navbar" class="fixed w-full z-50 transition-colors duration-300 bg-black/90 md:bg-transparent">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center space-x-2">
-        <img src="./assets/logo/Myanbetapp-logo.png" alt="Myanbetapp official logo - မြန်မာအွန်လိုင်းကာစီနို" class="h-12" width="200" height="60" fetchpriority="high"/>
+        <div class="logo-css" aria-label="Myanbetapp logo">
+          <span class="logo-badge">A♠</span>
+          <span class="logo-text">Myanbetapp</span>
+        </div>
       </div>
       <nav class="hidden md:flex space-x-6 text-white">
         <a href="#home" class="hover:text-[#CA0536] hover:underline">Home</a>
